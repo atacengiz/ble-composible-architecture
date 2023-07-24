@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E15210812A6ABB9F0019613D /* KnownDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15210802A6ABB9F0019613D /* KnownDevice.swift */; };
+		E15210832A6E7E460019613D /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15210822A6E7E460019613D /* Root.swift */; };
 		E17D1D1E2A6532CB004E730D /* ComposableBleDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D1D2A6532CB004E730D /* ComposableBleDemoApp.swift */; };
-		E17D1D202A6532CB004E730D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D1F2A6532CB004E730D /* ContentView.swift */; };
+		E17D1D202A6532CB004E730D /* KnownDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D1F2A6532CB004E730D /* KnownDeviceView.swift */; };
 		E17D1D222A6532CC004E730D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17D1D212A6532CC004E730D /* Assets.xcassets */; };
 		E17D1D252A6532CC004E730D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17D1D242A6532CC004E730D /* Preview Assets.xcassets */; };
 		E17D1D272A6532CC004E730D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D262A6532CC004E730D /* Persistence.swift */; };
@@ -16,6 +18,13 @@
 		E17D1D342A6532CC004E730D /* ComposableBleDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D332A6532CC004E730D /* ComposableBleDemoTests.swift */; };
 		E17D1D3E2A6532CC004E730D /* ComposableBleDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D3D2A6532CC004E730D /* ComposableBleDemoUITests.swift */; };
 		E17D1D402A6532CC004E730D /* ComposableBleDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D3F2A6532CC004E730D /* ComposableBleDemoUITestsLaunchTests.swift */; };
+		E17D1D4E2A6533DF004E730D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = E17D1D4D2A6533DF004E730D /* ComposableArchitecture */; };
+		E17D1D532A653510004E730D /* ThermometerRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D522A653510004E730D /* ThermometerRootView.swift */; };
+		E17D1D5A2A6537BA004E730D /* BLEClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D592A6537BA004E730D /* BLEClient.swift */; };
+		E17D1D5F2A656806004E730D /* Thermometer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D5E2A656806004E730D /* Thermometer.swift */; };
+		E17D1D622A656823004E730D /* Peripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D612A656823004E730D /* Peripheral.swift */; };
+		E17D1D642A656FFC004E730D /* ThermometerPeripheralClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17D1D632A656FFC004E730D /* ThermometerPeripheralClient.swift */; };
+		E19804BB2A6EAB3B00B91C2E /* PeripheralClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19804BA2A6EAB3B00B91C2E /* PeripheralClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E15210802A6ABB9F0019613D /* KnownDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownDevice.swift; sourceTree = "<group>"; };
+		E15210822A6E7E460019613D /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		E17D1D1A2A6532CB004E730D /* ComposableBleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableBleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17D1D1D2A6532CB004E730D /* ComposableBleDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableBleDemoApp.swift; sourceTree = "<group>"; };
-		E17D1D1F2A6532CB004E730D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E17D1D1F2A6532CB004E730D /* KnownDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnownDeviceView.swift; sourceTree = "<group>"; };
 		E17D1D212A6532CC004E730D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17D1D242A6532CC004E730D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E17D1D262A6532CC004E730D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +59,12 @@
 		E17D1D392A6532CC004E730D /* ComposableBleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComposableBleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17D1D3D2A6532CC004E730D /* ComposableBleDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableBleDemoUITests.swift; sourceTree = "<group>"; };
 		E17D1D3F2A6532CC004E730D /* ComposableBleDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposableBleDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E17D1D522A653510004E730D /* ThermometerRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermometerRootView.swift; sourceTree = "<group>"; };
+		E17D1D592A6537BA004E730D /* BLEClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEClient.swift; sourceTree = "<group>"; };
+		E17D1D5E2A656806004E730D /* Thermometer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thermometer.swift; sourceTree = "<group>"; };
+		E17D1D612A656823004E730D /* Peripheral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peripheral.swift; sourceTree = "<group>"; };
+		E17D1D632A656FFC004E730D /* ThermometerPeripheralClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermometerPeripheralClient.swift; sourceTree = "<group>"; };
+		E19804BA2A6EAB3B00B91C2E /* PeripheralClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17D1D4E2A6533DF004E730D /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,12 +116,16 @@
 		E17D1D1C2A6532CB004E730D /* ComposableBleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E17D1D602A656814004E730D /* BaseClasses */,
+				E17D1D652A65703B004E730D /* Clients */,
+				E17D1D572A6535F0004E730D /* Features */,
 				E17D1D1D2A6532CB004E730D /* ComposableBleDemoApp.swift */,
-				E17D1D1F2A6532CB004E730D /* ContentView.swift */,
+				E17D1D1F2A6532CB004E730D /* KnownDeviceView.swift */,
 				E17D1D212A6532CC004E730D /* Assets.xcassets */,
 				E17D1D262A6532CC004E730D /* Persistence.swift */,
 				E17D1D282A6532CC004E730D /* ComposableBleDemo.xcdatamodeld */,
 				E17D1D232A6532CC004E730D /* Preview Content */,
+				E15210822A6E7E460019613D /* Root.swift */,
 			);
 			path = ComposableBleDemo;
 			sourceTree = "<group>";
@@ -133,6 +155,50 @@
 			path = ComposableBleDemoUITests;
 			sourceTree = "<group>";
 		};
+		E17D1D4F2A6534BA004E730D /* Thermometer */ = {
+			isa = PBXGroup;
+			children = (
+				E17D1D5E2A656806004E730D /* Thermometer.swift */,
+				E17D1D632A656FFC004E730D /* ThermometerPeripheralClient.swift */,
+				E17D1D512A6534F6004E730D /* Views */,
+			);
+			path = Thermometer;
+			sourceTree = "<group>";
+		};
+		E17D1D512A6534F6004E730D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E17D1D522A653510004E730D /* ThermometerRootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E17D1D572A6535F0004E730D /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				E17D1D4F2A6534BA004E730D /* Thermometer */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E17D1D602A656814004E730D /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E17D1D612A656823004E730D /* Peripheral.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		E17D1D652A65703B004E730D /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				E17D1D592A6537BA004E730D /* BLEClient.swift */,
+				E15210802A6ABB9F0019613D /* KnownDevice.swift */,
+				E19804BA2A6EAB3B00B91C2E /* PeripheralClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +215,9 @@
 			dependencies = (
 			);
 			name = ComposableBleDemo;
+			packageProductDependencies = (
+				E17D1D4D2A6533DF004E730D /* ComposableArchitecture */,
+			);
 			productName = ComposableBleDemo;
 			productReference = E17D1D1A2A6532CB004E730D /* ComposableBleDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +290,9 @@
 				Base,
 			);
 			mainGroup = E17D1D112A6532CB004E730D;
+			packageReferences = (
+				E17D1D4C2A6533DF004E730D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = E17D1D1B2A6532CB004E730D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,8 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17D1D5F2A656806004E730D /* Thermometer.swift in Sources */,
+				E17D1D622A656823004E730D /* Peripheral.swift in Sources */,
 				E17D1D272A6532CC004E730D /* Persistence.swift in Sources */,
-				E17D1D202A6532CB004E730D /* ContentView.swift in Sources */,
+				E17D1D5A2A6537BA004E730D /* BLEClient.swift in Sources */,
+				E19804BB2A6EAB3B00B91C2E /* PeripheralClient.swift in Sources */,
+				E15210832A6E7E460019613D /* Root.swift in Sources */,
+				E17D1D532A653510004E730D /* ThermometerRootView.swift in Sources */,
+				E17D1D202A6532CB004E730D /* KnownDeviceView.swift in Sources */,
+				E15210812A6ABB9F0019613D /* KnownDevice.swift in Sources */,
+				E17D1D642A656FFC004E730D /* ThermometerPeripheralClient.swift in Sources */,
 				E17D1D1E2A6532CB004E730D /* ComposableBleDemoApp.swift in Sources */,
 				E17D1D2A2A6532CC004E730D /* ComposableBleDemo.xcdatamodeld in Sources */,
 			);
@@ -425,9 +505,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ComposableBleDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = TYS5WR4RLJ;
+				DEVELOPMENT_TEAM = N44P5HH666;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "WE NEED BLE";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,12 +532,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ComposableBleDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = TYS5WR4RLJ;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "WE NEED BLE";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +551,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.atacengiz.ComposableBleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -591,6 +674,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E17D1D4C2A6533DF004E730D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E17D1D4D2A6533DF004E730D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E17D1D4C2A6533DF004E730D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		E17D1D282A6532CC004E730D /* ComposableBleDemo.xcdatamodeld */ = {

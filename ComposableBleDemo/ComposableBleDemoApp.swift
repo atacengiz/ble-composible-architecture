@@ -6,15 +6,21 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct ComposableBleDemoApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    let store: StoreOf<Root> = Store(initialState: Root.State()) {
+        Root()
+            .signpost()
+            ._printChanges()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            KnownDeviceView(store: self.store.scope(state: \.knownDevice,
+                                                    action: Root.Action.knownDevice))
         }
     }
 }
